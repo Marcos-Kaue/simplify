@@ -61,7 +61,7 @@ section {
     position: fixed;
     display: flex;
     align-items: center ;
-    justify-content: space-between;
+    text-align: center;
     padding: 10px 20px;
     background: rgba(29, 69, 120, 0.468);
 }
@@ -370,7 +370,7 @@ section {
     }
 
     .nav-links li {
-        margin: 10px 5px;
+        margin: 10px 3px;
     }
 
     .logo img {
@@ -425,7 +425,7 @@ section {
     }
 
     .nav-links li {
-        margin: 5px 2px;
+        margin: 5px 3px;
     }
 
     .cta-button {
