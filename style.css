@@ -18,6 +18,8 @@ body {
 
 html {
     scroll-behavior: smooth; /* Faz a rolagem ser suave */
+    width: 100vw; 
+    max-width: 100%;
 }
 
 section {
@@ -77,7 +79,7 @@ section {
 }
 
 .nav-links li {
-    margin: 0 30px;
+    margin: 0 10px;
 }
 
 .nav-links a {
