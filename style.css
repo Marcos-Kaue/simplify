@@ -1,4 +1,5 @@
-*,*::before, *::after{
+/* Reset básico */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -8,6 +9,7 @@ body, h1, h2, p, ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilos globais */
 body {
     background-color: #f5f5f5;
     color: #333;
@@ -18,10 +20,11 @@ body {
 
 html {
     scroll-behavior: smooth; /* Faz a rolagem ser suave */
-    width: 100vw; 
+    width: 100vw;
     max-width: 100%;
 }
 
+/* Seções */
 section {
     width: 100%;
     display: flex;
@@ -29,10 +32,11 @@ section {
     align-items: center;
 }
 
+/* Ícone do WhatsApp */
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     width: 60px;
     height: 60px;
     background-color: #25d36500;
@@ -54,15 +58,15 @@ section {
     height: 50px;
 }
 
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     height: 60px;
     z-index: 99;
-    position: fixed;
     display: flex;
-    align-items: center ;
+    align-items: center;
     text-align: center;
     background: rgba(29, 69, 120, 0.468);
 }
@@ -87,13 +91,14 @@ section {
     color: white;
     font-weight: bold;
     transition: 0.3s;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links a:hover {
     color: #ffdd57;
 }
 
+/* Container */
 .container {
     width: 100%;
     max-width: 1100px;
@@ -104,8 +109,8 @@ section {
 #hero {
     position: relative;
     width: 100%;
-    min-height: 100vh;  
-    padding-top: 60px; 
+    min-height: 100vh;
+    padding-top: 60px;
     margin: 0;
     background: linear-gradient(90deg, rgba(2,36,100, 0.9), rgb(13, 120, 235));
     background-size: cover;
@@ -119,12 +124,12 @@ section {
 #hero::before {
     content: "";
     position: absolute;
-    top: 0; 
+    top: 0;
     right: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     background: url('imagens/fundo.jpg') no-repeat right center;
-    background-size: cover; 
+    background-size: cover;
     opacity: 0.7;
     pointer-events: none;
     z-index: 1;
@@ -134,7 +139,7 @@ section {
     position: relative;
     z-index: 2;
     max-width: 1200px;
-    margin:  0 auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     min-height: 400px;
@@ -142,7 +147,7 @@ section {
 
 .hero-text {
     max-width: 600px;
-    text-align: left; 
+    text-align: left;
 }
 
 #hero h1 {
@@ -166,7 +171,7 @@ section {
     border-radius: 10px;
 }
 
-
+/* Botão de Call to Action */
 .cta-button {
     display: inline-block;
     background: #4ca1af;
@@ -183,6 +188,7 @@ section {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Serviços */
 #services {
     width: 100%;
     background: #1E3A5F;
@@ -232,15 +238,14 @@ section {
     color: #333;
 }
 
-.imposto{
-    width: 100%;
-    padding: 90px 0px;
+/* Imposto */
+.imposto {
+    padding: 90px;
     background: linear-gradient(90deg, rgba(2,36,100, 0.9), rgb(13, 120, 235));
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .title {
     text-align: center;
@@ -252,6 +257,7 @@ section {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Grid */
 .grid {
     display: flex;
     justify-content: center;
@@ -272,10 +278,10 @@ section {
     color: #aaa;
 }
 
-#faq{
-    width: 100%;
+/* FAQ */
+#faq {
     background: #1E3A5F;
-    padding: 50px 0px;
+    padding: 50px;
 }
 
 .faq-container {
@@ -286,30 +292,35 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .faq-title {
     text-align: center;
     color: #333;
 }
+
 .faq-item {
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
+
 .faq-item:last-child {
     border-bottom: none;
 }
+
 .faq-question {
     font-weight: bold;
     cursor: pointer;
     color: #007bff;
 }
+
 .faq-answer {
     display: none;
     margin-top: 10px;
     color: #555;
 }
 
+/* Contato */
 #contact {
-    width: 100%;
     padding: 30px 0;
     background: linear-gradient(90deg, #022464, #0d78eb);
 }
@@ -364,6 +375,7 @@ section {
     background: #3b8d99;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .navbar {
         height: auto;
@@ -404,7 +416,6 @@ section {
     .service {
         width: 100%;
         max-width: 300px;
-        
     }
 
     .grid {
@@ -424,7 +435,6 @@ section {
     }
 }
 
-/* Estilos para dispositivos muito pequenos */
 @media (max-width: 480px) {
     .navbar {
         padding: 5px;
@@ -460,6 +470,7 @@ section {
     }
 }
 
+/* Rodapé */
 footer {
     background: #1e3c72;
     color: #fff;
