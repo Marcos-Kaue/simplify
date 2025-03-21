@@ -30,7 +30,7 @@ section {
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     width: 60px;
     height: 60px;
     background-color: #25d36500;
@@ -102,8 +102,8 @@ section {
 #hero {
     position: relative;
     width: 100%;
-    min-height: 100vh;  /* preenche a altura da tela */
-    padding-top: 60px;  /* espaço para não ficar escondido pelo navbar */
+    min-height: 100vh;  
+    padding-top: 60px; 
     margin: 0;
     background: linear-gradient(90deg, rgba(2,36,100, 0.9), rgb(13, 120, 235));
     background-size: cover;
@@ -361,7 +361,7 @@ section {
 @media (max-width: 768px) {
     .navbar {
         height: auto;
-        padding: 10px;
+        padding: 10px 0px;
     }
 
     .nav-links {
@@ -398,6 +398,7 @@ section {
     .service {
         width: 100%;
         max-width: 300px;
+        
     }
 
     .grid {
